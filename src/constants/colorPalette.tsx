@@ -1,0 +1,37 @@
+export const spaceColors = [
+  "#888888",
+  "#C7C3BF",
+  "#67605D",
+  "#8D8985",
+  "#A29B91",
+  "#93928B",
+  "#606F5C",
+  "#ACA194",
+  "#364443",
+  "#dcba83", // -> d2b487
+  "#9b6f56",
+  "#E9EAE6",
+  "#D6D5D1",
+  "#BBA490",
+  "#888888",
+  "#FFFFFF",
+];
+
+export const mapSpaceColors = [
+  "0", spaceColors[0],
+  "1", spaceColors[1],
+  "2", spaceColors[2],
+  "3", spaceColors[3],
+  "4", spaceColors[4],
+  "5", spaceColors[5],
+  "6", spaceColors[6],
+  "7", spaceColors[7],
+  "8", spaceColors[8],
+  "9", spaceColors[9],
+  "10", spaceColors[10],
+  "11", spaceColors[11],
+  "12", spaceColors[12],
+  "13", spaceColors[13],
+  "14", spaceColors[14],
+  "15", spaceColors[15],
+]
