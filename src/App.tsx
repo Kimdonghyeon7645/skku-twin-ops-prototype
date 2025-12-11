@@ -1,3 +1,5 @@
+import RightPanel from "./components/RightPanel";
+import TitleBar from "./components/TitleBar";
 import useMap from "./hooks/useMap";
 
 function App() {
@@ -6,6 +8,8 @@ function App() {
   return (
     <div>
       <div ref={containerRef} className="absolute h-svh w-svw" />
+      <TitleBar />
+      <RightPanel />
     </div>
   );
 }
