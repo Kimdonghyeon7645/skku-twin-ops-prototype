@@ -5,8 +5,8 @@ const RightPanel = () => {
   const sectionStyles = {
     box: "bg-[#ffffffcc] rounded-xl w-[calc(100%-25px)] mx-[12px]",
     header: "pl-4 pr-3 py-2 flex justify-between items-center",
-    title: "tracking-tight text-[#444] text-[1.1rem] font-semibold",
-    status: "py-[3px] px-3 rounded-2xl bg-[#F2F6FE] text-[#064C8B]",
+    title: "tracking-tight text-[#444] text-[1.15rem] font-semibold",
+    status: "py-[3px] px-3 rounded-2xl bg-[#f2f6fe] text-[#2175bf] font-medium",
     body: "flex flex-wrap gap-y-3.5 px-4.5 pt-2 pb-5",
     label: "text-[0.95rem] text-[#888]",
     value: "text-[1.1rem] text-[#444] font-bold leading-[17px]",
@@ -17,9 +17,9 @@ const RightPanel = () => {
       <div className="w-[360px] bg-[#F7F7F7dd] backdrop-blur-sm rounded-3xl overflow-hidden" style={{ maxHeight: "calc(100svh - 70px)" }}>
         <div className="flex items-center h-13 px-3 gap-2 text-[#333] tracking-tight">
           <select className="h-10 rounded-xl hover:bg-[#e9e9e9] text-[1.15rem] outline-0 px-1">
-            <option>15階</option>
+            <option>3층</option>
           </select>
-          <div className="text-[1.25rem] font-bold">ペガサスホール</div>
+          <div className="text-[1.25rem] font-bold">테스트 사무실 1</div>
           <div className="grow" />
           <div className="pt-1 pb-1.5 pl-1 pr-2 rounded-xl hover:bg-[#e9e9e9] cursor-pointer" onClick={() => {}}>
             <ChevronUpIcon />
@@ -29,15 +29,15 @@ const RightPanel = () => {
         <div className="pb-3 flex flex-col gap-2.5 overflow-y-auto" style={{ maxHeight: "calc(100svh - 70px - 52px)" }}>
           <div className={sectionStyles.box}>
             <div className={sectionStyles.header}>
-              <div className={sectionStyles.title}>在室状況・トイレ</div>
-              <div className={sectionStyles.status}>余裕</div>
+              <div className={sectionStyles.title}>사내 인력 현황</div>
+              <div className={sectionStyles.status}>정상</div>
             </div>
             <div className={sectionStyles.body}>
               {[
-                ["在室人数", `${13} 名`],
+                ["상주 인원", `31 / 38 명`],
                 ["", ""],
-                ["トイレ(男)", `${1}/${4}`],
-                ["トイレ(女)", `${0}/${4}`],
+                ["외근 인원", `5 명`],
+                ["휴가 인원", `2 명`],
               ].map(([label, value], i) => (
                 <div key={i} className="w-[49%] tracking-[-0.4px]">
                   <div className={sectionStyles.label}>{label}</div>
@@ -48,15 +48,15 @@ const RightPanel = () => {
           </div>
           <div className={sectionStyles.box}>
             <div className={sectionStyles.header}>
-              <div className={sectionStyles.title}>空気質 & ウイルス指数™</div>
-              <div className={sectionStyles.status}>正常</div>
+              <div className={sectionStyles.title}>회의실 이용 현황</div>
+              <div className={sectionStyles.status}>여유</div>
             </div>
             <div className={sectionStyles.body}>
               {[
-                ["CO₂", `${2369} ppm`],
-                ["PM2.5", `${10} μg/m³`],
-                ["TVOC", `${1.3} ppm`],
-                ["ウイルス指数", `${3.8}`],
+                ["대회의실", `금일 예약없음`],
+                ["소회의실 1", `금일 예약없음`],
+                ["소회의실 2", `14:00 예약`],
+                ["소회의실 3", `13:00 예약`],
               ].map(([label, value], i) => (
                 <div key={i} className="w-[49%] tracking-[-0.4px]">
                   <div className={sectionStyles.label}>{label}</div>
@@ -67,8 +67,8 @@ const RightPanel = () => {
           </div>
           <div className={sectionStyles.box}>
             <div className={sectionStyles.header}>
-              <div className={sectionStyles.title}>快適性評価 (PMV)</div>
-              <div className={sectionStyles.status}>快適</div>
+              <div className={sectionStyles.title}>실내환경 모니터링</div>
+              <div className={sectionStyles.status}>쾌적</div>
             </div>
             <div className="h-4.5 mx-3.5 mt-1.5 rounded-full overflow-hidden relative">
               <div
@@ -79,12 +79,12 @@ const RightPanel = () => {
             </div>
             <div className={sectionStyles.body}>
               {[
-                ["室温", `${26} °C`],
-                ["湿度", `${50} %`],
-                ["気流", `${0.1} m/s`],
-                ["平均放射温度", `${23} °C`],
-                ["着衣量", `${1} clo`],
-                ["活動量", `${1} Met`],
+                ["냉/난방온도", `${25} °C`],
+                ["현재 온도", `${25.4} °C`],
+                ["습도", `${50} %`],
+                ["이산화탄소 농도", `정상 (862 ppm)`],
+                ["미세먼지 농도", `정상 (21 ㎍/㎥)`],
+                ["초미세먼지 농도", `정상 (15 ㎍/㎥)`],
               ].map(([label, value], i) => (
                 <div key={i} className="w-[49%] tracking-[-0.4px]">
                   <div className={sectionStyles.label}>{label}</div>

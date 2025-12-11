@@ -19,8 +19,8 @@ const ToggleBtn = ({ value, onToggle }: Props) => {
         "
       onClick={onToggle}
     >
-      <div className={labelBaseStyle + "left-[9px]"}>日常</div>
-      <div className={labelBaseStyle + "right-[9px]"}>非常</div>
+      <div className={labelBaseStyle + "left-[9px]"}></div>
+      <div className={labelBaseStyle + "right-3.5"}>2D</div>
       <div
         className={`
             absolute top-1/2 -translate-y-1/2 
@@ -31,7 +31,7 @@ const ToggleBtn = ({ value, onToggle }: Props) => {
             ${value ? "bg-[#A60F12] translate-x-9.5" : "bg-[#888888] translate-x-0"}
           `}
       >
-        {value ? "非常" : "日常"}
+        {value ? "3D" : "3D"}
       </div>
     </div>
   );
