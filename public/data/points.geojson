@@ -1,0 +1,53 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [126.97695195725782, 37.29089779192833]
+      },
+      "properties": { "title": "대회의실" }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [126.97703087788994, 37.290807885962565]
+      },
+      "properties": { "title": "소회의실1" }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [126.97698241633935, 37.29078591829641]
+      },
+      "properties": { "title": "소회의실2" }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [126.97694214867448, 37.2907676317637]
+      },
+      "properties": { "title": "소회의실3" }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [126.97681884883121, 37.29084037110931]
+      },
+      "properties": { "title": "기술개발부" }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [126.97688629878598, 37.290748223394274]
+      },
+      "properties": { "title": "사업부" }
+    }
+  ]
+}
