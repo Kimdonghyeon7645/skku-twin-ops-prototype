@@ -5,14 +5,7 @@ function App() {
 
   return (
     <div>
-      <div
-        ref={containerRef}
-        style={{
-          position: "absolute",
-          height: "100svh",
-          width: "100vw",
-        }}
-      />
+      <div ref={containerRef} className="absolute h-svh w-svw" />
     </div>
   );
 }
